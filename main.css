@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#welcome {
+    background-color: lightgrey;
+    margin: 0px;
+    width: 100%;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+#welcome h1 {
+    font-family: 'Indie Flower', cursive;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#main {
+    margin-left: 5px;
+}
+
+input {
+    border-style: outset;
+    margin: 1px 5px 1px 10px;
+    border-color: darkcyan;
+}
