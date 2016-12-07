@@ -19,7 +19,7 @@
         <script>
             $('#change').click(function() {
                 var titleValue = $('#titleInput').val();
-                $('h1').hide(500).delay(500, function() {
+                $('h1').hide(500, function() {
 			$(this).html(titleValue).show(600);	
 		});
                 
