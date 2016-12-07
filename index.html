@@ -22,8 +22,10 @@
         <script>
             $('#change').click(function() {
                 var titleValue = $('#titleInput').val();
-                $('h1').hide(500).delay(500);
-                $('h1').html(titleValue).show(600);
+                $('h1').hide(500).delay(500).(function() {
+			$('h1').html(titleValue).show(600);	
+		};
+                
             });
         </script>
         
