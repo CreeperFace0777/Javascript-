@@ -4,11 +4,7 @@
         <title>Test Webpage</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
-        <script
-			  src="http://code.jquery.com/jquery-3.1.1.min.js"
-			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			  crossorigin="anonymous">
-        </script>
+        
     </head>
     <body>
         <div id="welcome">
@@ -19,12 +15,13 @@
             <input name="Change Title Input" id="titleInput">
             <button name="Change Title" draggable="true" id="change">Change Title</button>
         </div>
+	    <script src="jquery-3.1.1.js"></script>
         <script>
             $('#change').click(function() {
                 var titleValue = $('#titleInput').val();
-                $('h1').hide(500).delay(500).(function() {
-			$('h1').html(titleValue).show(600);	
-		};
+                $('h1').hide(500).delay(500, function() {
+			$(this).html(titleValue).show(600);	
+		});
                 
             });
         </script>
