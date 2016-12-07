@@ -4,22 +4,22 @@
         <title>Test Webpage</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <script src="libraries/p5.dom.js"></script>
+        <script src="libraries/p5.js"></script>
+        <script src="libraries/p5.sound.js"></script>
+        <script src="js/sketch.js"></script>
         <script src="libraries/jquery.min.js"></script>
-        <script src="js/main.js"></script>
 
     </head>
-    <body>
+   <body>
         <div id="welcome">
             <h1 id="title">Welcome!</h1>
         </div>
 
-        <div id="main">
-            <input name="Change Title Input" id="titleInput">
-            <button name="Change Title" draggable="true" id="change">Change Title</button>
-        </div>
+
         <script>
             $('#title').click(function() {
-                window.location.href = "sketch.html";
+                window.location.href = "index.html";
             });
         </script>
 
